@@ -39,7 +39,7 @@ copy.addEventListener('click',()=>
     if(!password) 
     {
         alert("Generate a new password by setting the length!");
-        
+
         return;
     }
     
@@ -49,6 +49,7 @@ copy.addEventListener('click',()=>
     document.execCommand('copy');
     textarea.remove();
     alert('Password copied to clipboard!')
+    password.innerHTML='';
 })
 
 
