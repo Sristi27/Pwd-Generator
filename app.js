@@ -36,7 +36,10 @@ copy.addEventListener('click',()=>
 {
     const textarea=document.createElement('textarea');
     const password=result.innerHTML;
-    if(!password) return;
+    if(!password) 
+    {
+        alert("Generate a new password by setting the length!")
+    }
     
     textarea.value=password;
     document.body.appendChild(textarea);
