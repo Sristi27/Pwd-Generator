@@ -39,6 +39,7 @@ copy.addEventListener('click',()=>
     if(!password) 
     {
         alert("Generate a new password by setting the length!");
+        
         return;
     }
     
