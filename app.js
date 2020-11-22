@@ -38,7 +38,8 @@ copy.addEventListener('click',()=>
     const password=result.innerHTML;
     if(!password) 
     {
-        alert("Generate a new password by setting the length!")
+        alert("Generate a new password by setting the length!");
+        return;
     }
     
     textarea.value=password;
