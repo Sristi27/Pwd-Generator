@@ -20,12 +20,16 @@ const randomFun = {
 generate.addEventListener("click",()=>
 {
    const len = length.value;
-   const haslow = lower.checked;
-   const hasupper = upper.checked;
-   const hasnum = num.checked;
-   const hassymbol = symbol.checked;
-
-   result.innerHTML = generatePassword(haslow,hasupper,hasnum,hassymbol,len);
+   if(!len)
+   alert("Length field needs to be filled")
+   else{
+    const haslow = lower.checked;
+    const hasupper = upper.checked;
+    const hasnum = num.checked;
+    const hassymbol = symbol.checked;
+ 
+    result.innerHTML = generatePassword(haslow,hasupper,hasnum,hassymbol,len);
+   }
 
 
 })
