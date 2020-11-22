@@ -1,0 +1,153 @@
+body
+{
+    background-color:#038159;
+}
+.main
+{
+    position: absolute;
+    background-color: #f7b335;
+    padding:10px;
+    height: 70vh;
+    width: 65vh;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    box-shadow: 3px 3px 15px 2px #effdd3
+}
+
+
+.main h2{
+    color:  #523601;
+    font-weight: 550;
+    font-size: 30px;
+}
+.content
+{
+    
+    border-radius: 5px;
+    padding:22px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height:49vh;
+    width:50vh;
+    /* transform: translate(-50%,-50%); */
+    
+}
+
+.content .result
+{
+    padding:6px 8px;
+    border: 1px solid #038159;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result #pwd {
+    word-wrap: break-word;
+  max-width: calc(100% - 40px);
+  color: #038159;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.result .btn{
+
+    color:white;
+    cursor: pointer;
+    background-color: #038159;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 5px 10px;
+}
+
+.setting label{
+    font-size:18px;
+}
+.setting input[type="number"]
+{
+    width: 35%;
+    padding:6px 5px;
+    outline: none;
+    font-size: 15px;
+    border:1px solid #00904f ;
+    background:#ffffff ;
+    color:#00904f
+}
+
+
+input[type=checkbox] {
+    cursor: pointer;
+  }
+  
+  input[type=checkbox]:checked:before {
+    content: "\2713";
+    background: #fffed5;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 22px;
+    text-align: center;
+    line-height: 8px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    color: #00904f;
+    border: 1px solid #038159;
+    border-radius: 4px;
+    margin: -3px -3px;
+    text-indent: 1px;
+  }
+  
+  input[type=checkbox]:before {
+    content: "\202A";
+    background: #fffed5;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 22px;
+    text-align: center;
+    line-height: 8px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    color: #00904f;
+    border: 1px solid #038159;
+    border-radius: 4px;
+    margin: -3px -3px;
+    text-indent: 1px;
+  }
+
+.setting:first-child
+{
+    align-items: center;
+}
+
+.content .constraints
+{
+    width: 100%;
+    margin:30px 0;
+}
+
+.setting label{
+    color:  #523601;
+}
+.setting
+{
+    display: flex;
+    justify-content: space-between;
+    padding:13px 0;
+}
+
+.btn-submit
+{
+    width:100%;
+    padding:10px 30px;
+    background-color:white;
+    cursor: pointer;
+    color:#038159 ;
+    border: 1px solid #038159;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
